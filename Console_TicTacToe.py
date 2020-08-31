@@ -132,12 +132,11 @@ INSTRUCTIONS = "1. The game is played on a grid that's {N} by {N} squares.\n" \
 				"4. Mark a square by entering an empty square´s coordinates separated by a space in the format \"x y\".\n" \
 				"5. The first player to get {N} of their marks in a row (vertically, horizontally or diagonally) is the winner.\n" \
 				"6. When all {N2} squares are full, the game is over. If no player has {N} marks in a row, the game ends as a draw.\n"
-
 N = 3
 DEFAULT_CHAR = "*"
 PLAYER1 = "X"
 PLAYER2 = "O"
-grid = Grid() # [Y][X]
+grid = Grid()  # [Y][X]
 # run
 print_instructions()
 input("press enter to start game")

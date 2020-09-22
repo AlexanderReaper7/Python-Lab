@@ -63,5 +63,4 @@ def determine_winner(player: int, computer: int):
 			return True
 
 
-if __name__ == '__main__':
-	main()
+main()

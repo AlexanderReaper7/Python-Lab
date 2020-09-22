@@ -3,7 +3,7 @@ class Grid:
 		self.squares = [[DEFAULT_CHAR for i in range(N)] for j in range(N)]
 
 
-def print_grid(grid):
+def print_grid(grid: Grid):
 	output = "\n"
 	for row in grid.squares:
 		i = 0

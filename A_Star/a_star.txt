@@ -69,7 +69,7 @@ def eval_node(grid, scores, open_set, came_from, goal: (int, int), node: (int, i
 def a_star(grid, start: (int, int), goal: (int, int)):
 	"""Function to calculate a path through a grid"""
 
-	scores: {(int, int): int} = {start: 0}  # (x,y): path length
+	scores: {(int, int): (int, int)} = {start: 0}  # (x,y): path length
 	came_from: {(int, int): (int, int)} = {start: start}  # (x,y): parent
 	open_set: {(int, int): int} = {start: distance(start, goal)}  # (x,y): total
 
